@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ClipKeep helps creators organize YouTube links and find the official download option for videos they own or are permitted to save."
+    />
+    <meta name="theme-color" content="#2146f3" />
+    <title>ClipKeep — Save videos you own</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="ClipKeep home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" role="img">
+            <path d="M8 5.5h16v21H8z" />
+            <path d="m13 12 7 4-7 4z" />
+          </svg>
+        </span>
+        <span>clipkeep</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-pill" href="#download">Try it free</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" id="download">
+        <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Built for creators</p>
+          <h1>Keep the videos<br />you <em>created.</em></h1>
+          <p class="hero-intro">
+            Paste a YouTube link to identify your video and find the safest official way to save it for offline use.
+          </p>
+        </div>
+
+        <div class="tool-shell">
+          <div class="tool-topline">
+            <span class="tool-status"><i></i> Link checker online</span>
+            <span class="tool-number">01</span>
+          </div>
+
+          <form class="download-form" id="download-form" novalidate>
+            <label for="video-url">YouTube video link</label>
+            <div class="input-wrap">
+              <svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M10.6 13.4a2 2 0 0 0 2.8 0l3-3a2 2 0 1 0-2.8-2.8L12.2 9" />
+                <path d="M13.4 10.6a2 2 0 0 0-2.8 0l-3 3a2 2 0 1 0 2.8 2.8l1.4-1.4" />
+              </svg>
+              <input
+                id="video-url"
+                name="video-url"
+                type="url"
+                inputmode="url"
+                autocomplete="url"
+                placeholder="https://youtube.com/watch?v=..."
+                aria-describedby="form-message"
+              />
+              <button class="paste-button" id="paste-button" type="button">Paste</button>
+            </div>
+
+            <label class="rights-check">
+              <input id="rights-confirmation" type="checkbox" />
+              <span class="fake-check" aria-hidden="true">
+                <svg viewBox="0 0 12 10"><path d="m1 5 3 3 7-7" /></svg>
+              </span>
+              <span>I own this video or have permission to save it.</span>
+            </label>
+
+            <button class="primary-button" type="submit">
+              <span>Check my video</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M14 7l5 5-5 5" />
+              </svg>
+            </button>
+            <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="result-card" id="result-card" hidden>
+            <div class="result-thumb-wrap">
+              <img id="result-thumb" alt="" />
+              <span class="result-badge">YouTube</span>
+            </div>
+            <div class="result-content">
+              <p class="result-label">Video found</p>
+              <h2 id="result-title">Your YouTube video</h2>
+              <p id="result-author">Ready for an official save option.</p>
+              <div class="result-actions">
+                <a class="official-button" id="download-link" href="download.html">
+                  Continue to download
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg>
+                </a>
+                <button class="reset-button" id="reset-button" type="button">Check another</button>
+              </div>
+            </div>
+          </div>
+
+          <p class="tool-note">
+            The next page contains an advertising area before supported download options. ClipKeep does not bypass YouTube protections.
+          </p>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Product benefits">
+        <div><span>01</span> No signup</div>
+        <div><span>02</span> No shady extensions</div>
+        <div><span>03</span> Creator-first</div>
+        <div><span>04</span> Works on any device</div>
+      </section>
+
+      <section class="how-section" id="how-it-works">
+        <div class="section-heading">
+          <p class="eyebrow dark"><span></span> Three easy steps</p>
+          <h2>From link to<br /><em>safe keeping.</em></h2>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card step-blue">
+            <span class="step-number">01</span>
+            <div class="step-art paste-art" aria-hidden="true">
+              <div class="mini-window">
+                <i></i><i></i><i></i>
+                <span>youtube.com/your-video</span>
+              </div>
+            </div>
+            <h3>Copy your link</h3>
+            <p>Open your video on YouTube and copy its URL from the address bar or Share menu.</p>
+          </article>
+
+          <article class="step-card step-yellow">
+            <span class="step-number">02</span>
+            <div class="step-art check-art" aria-hidden="true">
+              <div class="pulse-ring"></div>
+              <svg viewBox="0 0 48 48"><path d="m10 25 9 9 20-21" /></svg>
+            </div>
+            <h3>Confirm your rights</h3>
+            <p>Only save content you created, licensed, or received explicit permission to download.</p>
+          </article>
+
+          <article class="step-card step-coral">
+            <span class="step-number">03</span>
+            <div class="step-art save-art" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M24 7v25M14 23l10 10 10-10M9 40h30" /></svg>
+            </div>
+            <h3>Use the official option</h3>
+            <p>Jump to YouTube Studio for your uploads, or use supported offline viewing in YouTube Premium.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="feature-section">
+        <div class="feature-visual" aria-hidden="true">
+          <div class="visual-card card-back">
+            <span>PLAYLIST_07</span>
+          </div>
+          <div class="visual-card card-front">
+            <div class="video-shape"><i></i></div>
+            <div class="visual-lines"><i></i><i></i><i></i></div>
+            <span class="visual-chip">ORIGINAL</span>
+          </div>
+          <div class="spark spark-one">✦</div>
+          <div class="spark spark-two">✦</div>
+        </div>
+        <div class="feature-copy">
+          <p class="eyebrow dark"><span></span> Why ClipKeep</p>
+          <h2>Your work deserves a <em>clean</em> workflow.</h2>
+          <p>
+            No misleading format buttons, pop-ups, or software installs. Just a focused link check and a path to YouTube’s supported tools.
+          </p>
+          <ul>
+            <li><span>✓</span> Identifies standard YouTube links</li>
+            <li><span>✓</span> Fetches public title and thumbnail details</li>
+            <li><span>✓</span> Keeps your browsing flow transparent</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="faq-section" id="faq">
+        <div class="section-heading compact">
+          <p class="eyebrow dark"><span></span> Good to know</p>
+          <h2>Questions,<br /><em>answered.</em></h2>
+        </div>
+
+        <div class="faq-list">
+          <details open>
+            <summary>Can ClipKeep download any YouTube video?<span>+</span></summary>
+            <p>No. ClipKeep does not extract media streams or bypass YouTube protections. It helps you identify a link and routes you to supported saving options.</p>
+          </details>
+          <details>
+            <summary>How do I download a video I uploaded?<span>+</span></summary>
+            <p>Open YouTube Studio, choose Content, open the menu beside your upload, and select Download when that option is available.</p>
+          </details>
+          <details>
+            <summary>Does ClipKeep store my links?<span>+</span></summary>
+            <p>No. This page checks the link in your browser and does not create an account or save a link history.</p>
+          </details>
+          <details>
+            <summary>What links are supported?<span>+</span></summary>
+            <p>Standard youtube.com, youtu.be, YouTube Shorts, and YouTube Live URLs are recognized.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <p class="eyebrow"><span></span> Ready when you are</p>
+        <h2>Keep your originals<br />within <em>reach.</em></h2>
+        <a href="#download">Check a video <span>↗</span></a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M8 5.5h16v21H8z" /><path d="m13 12 7 4-7 4z" /></svg>
+        </span>
+        <span>clipkeep</span>
+      </a>
+      <p>For videos you own or have permission to save.</p>
+      <p>© 2026 ClipKeep</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

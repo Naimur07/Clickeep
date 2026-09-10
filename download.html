@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#2146f3" />
+    <title>Download options — ClipKeep</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="download-page">
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header download-header">
+      <a class="brand" href="index.html" aria-label="ClipKeep home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M8 5.5h16v21H8z" /><path d="m13 12 7 4-7 4z" /></svg>
+        </span>
+        <span>clipkeep</span>
+      </a>
+      <a class="back-link" href="index.html">← Check another video</a>
+    </header>
+
+    <main class="download-main">
+      <section class="download-panel">
+        <div class="download-progress" aria-label="Step 2 of 2">
+          <span class="done"></span><span class="done"></span>
+        </div>
+
+        <aside class="ad-zone ad-zone-top" aria-label="Advertisement">
+          <span class="ad-label">Advertisement</span>
+          <div class="ad-placeholder ad-placeholder-wide">
+            <strong>Top banner ad</strong>
+            <p>Premium placement above the video details.</p>
+            <code>Responsive ad space · 970 × 90</code>
+          </div>
+        </aside>
+
+        <div class="download-heading">
+          <p class="eyebrow dark"><span></span> Final step</p>
+          <h1>Video is<br /><em>unavailable.</em></h1>
+          <p>The pasted video cannot be downloaded here. You can still review the original video details below.</p>
+        </div>
+
+        <article class="selected-video" id="selected-video">
+          <img id="selected-thumb" alt="Selected YouTube video thumbnail" />
+          <div>
+            <span>Selected video</span>
+            <strong id="selected-title">YouTube video</strong>
+            <a id="watch-link" href="https://youtube.com" target="_blank" rel="noreferrer">View original ↗</a>
+          </div>
+        </article>
+
+        <aside class="ad-zone" aria-label="Advertisement">
+          <span class="ad-label">Advertisement</span>
+          <div class="ad-placeholder">
+            <strong>Your ad goes here</strong>
+            <p>Replace this placeholder with your approved ad network code.</p>
+            <code>Responsive ad space · 728 × 90</code>
+          </div>
+        </aside>
+
+        <div class="ad-grid" aria-label="Additional advertisements">
+          <aside class="ad-zone ad-zone-card" aria-label="Advertisement">
+            <span class="ad-label">Advertisement</span>
+            <div class="ad-placeholder">
+              <strong>Ad placement</strong>
+              <p>Ideal for a square or responsive display ad.</p>
+              <code>300 × 250</code>
+            </div>
+          </aside>
+          <aside class="ad-zone ad-zone-card" aria-label="Advertisement">
+            <span class="ad-label">Advertisement</span>
+            <div class="ad-placeholder">
+              <strong>Ad placement</strong>
+              <p>Use this space for a second approved campaign.</p>
+              <code>300 × 250</code>
+            </div>
+          </aside>
+        </div>
+
+        <div class="download-gate">
+          <div class="unavailable-message" role="status">
+            <span class="unavailable-icon" aria-hidden="true">!</span>
+            <div>
+              <strong>Video is unavailable</strong>
+              <p>This video cannot be downloaded from ClipKeep.</p>
+            </div>
+          </div>
+          <p class="download-disclosure">
+            ClipKeep does not extract, host, or bypass protections on YouTube video files.
+          </p>
+        </div>
+
+        <aside class="ad-zone ad-zone-bottom" aria-label="Advertisement">
+          <span class="ad-label">Advertisement</span>
+          <div class="ad-placeholder ad-placeholder-wide">
+            <strong>Bottom banner ad</strong>
+            <p>A final ad placement after the unavailable message.</p>
+            <code>Responsive ad space · 728 × 90</code>
+          </div>
+        </aside>
+      </section>
+
+      <aside class="download-sidebar">
+        <span class="sidebar-number">02</span>
+        <h2>Keep ads clear.<br />Keep trust high.</h2>
+        <p>Clearly label advertising and never disguise an ad as the download button.</p>
+        <ul>
+          <li><span>✓</span> One focused ad placement</li>
+          <li><span>✓</span> Visible advertisement label</li>
+          <li><span>✓</span> Clear final destination</li>
+        </ul>
+        <aside class="sidebar-ad" aria-label="Advertisement">
+          <span class="ad-label">Advertisement</span>
+          <div>
+            <strong>Sidebar ad</strong>
+            <code>300 × 600</code>
+          </div>
+        </aside>
+      </aside>
+    </main>
+
+    <script src="download.js"></script>
+  </body>
+</html>
